@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Activity 3</title>
+	 <script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<center>
+	<h2>Welcome!!</h2>
+
+	<div ng-app="myApp" ng-controller="myCtrl">
+
+	First Name: <input type="text" ng-model="firstName"><br>
+	Last Name: <input type="text" ng-model="lastName"><br>
+	<br>
+	Full Name: {{firstName + " " + lastName}}
+
+	<div ng-app="">
+    <h3>Withdraw</h3>
+    Your Balance is 40000<br>
+
+    <p>Balance:
+        <input type="text" ng-model="a" />
+    </p>
+    <p>Withdraw:
+        <input type="text" ng-model="b" />
+    </p>
+    <p>Money left: {{ a - b }}</p>
+</div>
+
+</div>
+	</center>
+	<script>
+
+var app = angular.module('myApp', []);
+
+
+app.controller('myCtrl', function($scope) {
+  $scope.firstName= "Jhon";
+  $scope.lastName= "Kenzo";
+});
+</script>
+</body>
+</html>

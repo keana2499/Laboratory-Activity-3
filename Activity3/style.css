@@ -1,0 +1,27 @@
+body{
+
+    background-image: url(white.jpg);
+    margin: 0;
+    padding: 0;
+
+
+
+}
+.center{
+    width: 500px;
+    text-align: center;
+    float: center;
+}
+.font{
+    font-size: 30px;
+    
+}
+.button{
+    font-size: 20px;
+  
+
+}
+
+
+
+
